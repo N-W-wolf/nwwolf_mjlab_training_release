@@ -1,0 +1,34 @@
+# Python 生成物
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# 虚拟环境（由 uv sync 生成，不入库）
+.venv
+
+# 本地检查脚本（migration / 调参自用，不入库）
+tests/
+
+# 机器人原始 mesh（培训版模型为纯原生几何体，仓库不含任何 STL）
+*.stl
+*.STL
+*.obj
+*.OBJ
+src/alldog_mjlab/robots/black/xmls/assets/
+
+# 训练日志、checkpoint 与导出产物
+logs/
+exported/
+*.pt
+*.onnx
+
+# 编辑器 / 工具缓存
+.vscode/
+.idea/
+
+# 运行期临时文件
+MUJOCO_LOG.TXT
+docs/
